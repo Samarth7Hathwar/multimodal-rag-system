@@ -1,0 +1,2 @@
+packaging @ file:///opt/miniconda3/conda-bld/packaging_1761049079158/work
+pillow==12.1.1
