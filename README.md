@@ -1,38 +1,49 @@
 # Multimodal RAG System
 
 ## 🚀 Overview
-This project builds a multimodal AI system that:
-- Understands images using CLIP
-- Retrieves relevant documents using embeddings
-- (Upcoming) Generates explanations using LLMs
+This project builds a **Multimodal AI system** that can:
+- Understand images using CLIP (vision-language model)
+- Convert both images and text into embeddings
+- Retrieve the most relevant documents using FAISS (vector search)
+
+The goal is to evolve this into a full **Retrieval-Augmented Generation (RAG)** system that explains images using retrieved knowledge.
 
 ---
 
 ## 🧠 Current Progress
 
 ### ✅ Completed
-- Image loading with PIL
-- Zero-shot image understanding (CLIP)
-- Basic multimodal retrieval (image → relevant text)
+- Image loading and preprocessing (PIL)
+- Zero-shot image understanding using CLIP
+- Text embedding generation using CLIP
+- Multimodal retrieval (image → relevant text)
+- FAISS-based vector search (efficient retrieval)
+- Embedding normalization for accurate similarity comparison
 
 ---
 
 ## 🔍 Example Output
 
-Input: Image of a child with a camel
+**Input:** Image of a child with a camel  
 
-Output: Most Relevant Document:
+**Output:**
+
+Most relevant document:
 Children often express emotions like happiness and laughter when playing.
 
-Similarity Score: 34.8192
+Distance Score (lower is better): 1.4075
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ System Architecture
 Image → CLIP → Image Embedding
 Text → CLIP → Text Embeddings
-→ Similarity Search (Dot Product)
-→ Best Matching Document
+↓
+FAISS Index
+↓
+Nearest Neighbor Search
+↓
+Most Relevant Document
 
 ---
 
@@ -40,28 +51,42 @@ Text → CLIP → Text Embeddings
 
 - Python
 - PyTorch
-- CLIP
-- PIL
-
-Upcoming:
-- FAISS (fast retrieval)
-- LLM (explanations)
-- Streamlit UI
+- CLIP (Vision-Language Model)
+- FAISS (Vector Similarity Search)
+- PIL (Image Processing)
 
 ---
 
 ## 📂 Project Structure
-images/
-docs/
-src/
-app.py
-README.md
-requirements.txt
+multimodal-rag-system/
+│── images/
+│── docs/
+│── src/
+│── app.py
+│── README.md
+│── requirements.txt
+
+---
+
+## 🧠 Key Concepts Implemented
+
+- Embeddings (image + text)
+- Vector similarity (dot product & L2 distance)
+- Embedding normalization
+- Efficient nearest neighbor search (FAISS)
 
 ---
 
 ## 🎯 Next Steps
 
-- [ ] Replace brute-force search with FAISS
-- [ ] Add LLM reasoning layer
-- [ ] Build UI
+- [ ] Add LLM-based explanation layer
+- [ ] Combine retrieved context with reasoning
+- [ ] Build API using FastAPI
+- [ ] Create UI using Streamlit
+- [ ] Improve dataset (real-world documents)
+
+---
+
+## ⚠️ Note
+
+This project is being built step-by-step to understand how real-world AI systems work, focusing on **core concepts first (embeddings, retrieval, indexing)** before adding higher-level components like LLMs.
