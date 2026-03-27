@@ -7,36 +7,40 @@ def load_model():
     model, preprocess = clip.load("ViT-B/32", device = device)
     return model, preprocess, device
 
-def process_image(image_path, preprocess, device):
-    image = preprocess(Image.open(image_path)).unsqueeze(0).to(device)
-    return image
+def load_documents(path):
+    with open(path,"r") as f:
+        docs = f.read().split("\n\n")
+    return docs
 
+def encode_texts(docs, model, device):
+    text_tokens = clip.tokenize(docs).to(device)
+    with torch.no_grad():
+        text_features = model.encode_text(text_tokens)
+    return text_features
+
+def encode_image(image_path, model, preprocess, device):
+    image = preprocess(Image.open(image_path)).unsqueeze(0).to(device)
+    with torch.no_grad():
+        image_features = model.encode_image(image)
+    return image_features
+    
+def retrieve(image_features, text_features, docs):
+    similarities = (image_features @ text_features.T).squeeze(0)
+    best_idx = similarities.argmax().item()
+    return docs[best_idx], similarities[best_idx].item()
 
 def main():
-    image_path = "images/test.jpg"
-    #image = load_image(image_path)
-
-    print("Loading CLIP model..")
     model, preprocess, device = load_model()
 
-    print("Preprocessing image..")
-    image = process_image(image_path, preprocess,device)
+    docs = load_documents("docs/data.txt")
+    text_features = encode_texts(docs, model, device)
+    image_path = "images/test.jpg"    
+    image_features = encode_image(image_path, model , preprocess, device)
 
-    labels = [
-        "a child",
-        "a camel",
-        "a desert",
-        "a person laughing",
-        "an animal"
-    ]
-    text = clip.tokenize(labels).to(device)
-
-    with torch.no_grad():
-        logits_per_image, _ = model(image,text)
-        probs = logits_per_image.softmax(dim=-1).cpu().numpy()
-    print("\n Predictions:")
-    for labels, prob in zip(labels, probs[0]):
-        print(f"{labels}: {prob:.4f}")
+    best_doc, score = retrieve(image_features, text_features, docs)
+    print("Most relevant documents: ")
+    print(best_doc)
+    print(f"\nSimilarity Score: {score:.4f}")
 
 
 if __name__ == "__main__":
