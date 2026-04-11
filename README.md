@@ -3,8 +3,9 @@
 This project builds an end-to-end multimodal Retrieval-Augmented Generation (RAG) system that explains images by retrieving relevant knowledge and generating grounded, confidence-aware responses using CLIP embeddings, FAISS retrieval, and LLM reasoning.
 
 Pipeline:
+```
 Image → CLIP embedding → FAISS retrieval → Hybrid re-ranking → Confidence estimation → LLM explanation
-
+```
 ---
 
 ## Demo
@@ -95,9 +96,9 @@ streamlit run app_ui.py
 ---
 
 ## Environment Variables
-
+```
 export OPENAI_API_KEY=your_api_key
-
+```
 ---
 
 ## Key Highlights
