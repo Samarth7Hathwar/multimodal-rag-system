@@ -1,0 +1,164 @@
+[HUMAN_EMOTION]
+Facial expressions such as smiling or laughing indicate emotions like happiness, excitement, or joy, often during interaction or play.
+
+[HUMAN_BEHAVIOR]
+People in outdoor environments may display social interaction, curiosity, or relaxed behavior depending on the setting.
+
+[HUMAN_CHILD]
+Children are smaller humans often engaged in playful, curious, or energetic activities.
+
+[HUMAN_FOOTPRINT]
+Human footprints in sand or soil indicate recent movement across a surface.
+
+[HUMAN_GENERAL]
+Humans can be identified by posture, clothing, and interaction with their surroundings.
+
+[ANIMAL_CAMEL]
+Camels are desert-adapted animals capable of surviving long periods without water, commonly found in arid regions.
+
+[ANIMAL_ADAPTATION]
+Animals adapt to environmental conditions such as heat, cold, or lack of water to survive.
+
+[ANIMAL_GENERAL]
+Animals appear in natural environments and can be recognized by their shape, movement, and interaction with surroundings.
+
+[ANIMAL_FOOTPRINT]
+Animal footprints in sand or soil indicate the presence and movement of wildlife.
+
+[ANIMAL_BIRD]
+Birds are flying animals commonly seen in skies, trees, or near water bodies.
+
+[ANIMAL_DOG]
+Dogs are domesticated animals often seen with humans, associated with movement and interaction.
+
+[ANIMAL_CAT]
+Cats are small agile animals often found in domestic or urban environments.
+
+[NATURE_TREE]
+Trees are large plants with trunks, branches, and leaves, forming a key part of natural landscapes.
+
+[TREE_ROOTS]
+Tree roots may become visible above ground due to erosion or natural growth, forming branching structures.
+
+[TREE_ROOTS_PATTERN]
+Exposed tree roots often create complex branching patterns across soil or sand surfaces.
+
+[TREE_ROOTS_SHORE]
+Tree roots near shorelines may be partially exposed due to water erosion, mixing with sand and debris.
+
+[TREE_ROOTS_TEXTURE]
+Tree roots create rough, irregular textures that contrast with smoother surfaces like sand.
+
+[NATURE_FOREST]
+Forests are dense areas filled with trees and vegetation, supporting diverse ecosystems.
+
+[NATURE_GRASSLAND]
+Grasslands are open landscapes dominated by grass with few trees.
+
+[NATURE_MOUNTAIN]
+Mountains are elevated landforms with steep slopes and rocky or vegetated surfaces.
+
+[NATURE_RIVER]
+Rivers are flowing water bodies that shape surrounding landscapes.
+
+[NATURE_LAKE]
+Lakes are still water bodies surrounded by land, often reflecting their environment.
+
+[NATURE_OCEAN]
+Oceans are vast bodies of water with waves, tides, and marine life.
+
+[NATURE_BEACH]
+Beaches are shorelines with sand or rocks where land meets water, often showing footprints and debris.
+
+[NATURE_DESERT]
+Deserts are dry environments with minimal vegetation, high temperatures, and sandy or rocky terrain.
+
+[NATURE_SNOW]
+Snow-covered environments appear white and cold, often in winter or high-altitude regions.
+
+[NATURE_SKY]
+The sky provides context about weather and lighting, appearing clear, cloudy, or stormy.
+
+[NATURE_SUNSET]
+Sunsets create warm colors such as orange and red as the sun moves below the horizon.
+
+[NATURE_WATER_EDGE]
+The transition between land and water often includes wet sand, reflections, and changing textures.
+
+[NATURE_EROSION]
+Erosion is the process where soil or rock is worn away, often exposing roots or altering terrain.
+
+[NATURE_SOIL]
+Soil surfaces vary from dry and rough to wet and smooth depending on conditions.
+
+[NATURE_ROCKS]
+Rocks appear in natural environments with varied shapes and textures.
+
+[PLANT_VEGETATION]
+Vegetation includes grass, shrubs, and plants growing naturally in outdoor environments.
+
+[SHORELINE_NATURE]
+Shorelines combine sand, water edges, vegetation, and natural debris such as roots or branches.
+
+[EROSION_ROOTS]
+Water erosion can remove soil and expose plant roots, especially near rivers or beaches.
+
+[WATER_EDGE_SAND]
+The boundary between water and sand often shows footprints, wet textures, and gradual transitions.
+
+[TEXTURE_SAND]
+Sand appears as a fine granular surface commonly found on beaches and deserts.
+
+[TEXTURE_WATER]
+Water surfaces may appear reflective, rippled, or flowing depending on conditions.
+
+[TEXTURE_GRASS]
+Grass forms a green textured surface in natural environments.
+
+[TEXTURE_MUD]
+Mud appears soft, wet, and uneven, often showing impressions or footprints.
+
+[SCENE_OUTDOOR]
+Outdoor scenes are exposed environments containing natural or urban elements under open sky.
+
+[SCENE_INDOOR]
+Indoor scenes are enclosed spaces with walls, furniture, and controlled lighting.
+
+[SCENE_NATURAL]
+Natural scenes include landscapes, vegetation, water bodies, and wildlife.
+
+[SCENE_URBAN]
+Urban scenes include buildings, roads, and human-made structures.
+
+[SCENE_ACTIVITY]
+Scenes with visible movement such as walking, playing, or interaction.
+
+[SCENE_STILL]
+Scenes with minimal motion, appearing static or calm.
+
+[ENVIRONMENT_DESERT]
+Desert environments are dry, hot, and sparsely vegetated landscapes.
+
+[ENVIRONMENT_CONTEXT]
+General environmental context when a scene contains mixed natural elements without a dominant subject.
+
+[VISUAL_PATTERN]
+Patterns refer to repeated textures, shapes, or structures visible in an image.
+
+[VISUAL_DEPTH]
+Depth in images is created by perspective, distance, and layering of objects.
+
+[VISUAL_COLOR]
+Colors provide cues about lighting, environment, and object properties.
+
+[MANUFACTURING_PBF]
+Powder Bed Fusion is a manufacturing process where a laser melts material layer by layer.
+
+[MANUFACTURING_DEFECT]
+Manufacturing defects such as lack of fusion occur when material is not fully melted.
+
+[THERMAL_EFFECTS]
+Thermal gradients during processing can cause stress and deformation in materials.
+
+[THERMAL_ANOMALY]
+Abnormal temperature distributions can indicate defects or irregularities in materials.
