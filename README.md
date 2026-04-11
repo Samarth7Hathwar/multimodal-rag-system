@@ -9,7 +9,7 @@ Image → Retrieve knowledge → Generate grounded explanation
 
 ## Demo
 
-![Demo](images/demo.png)
+![Demo](images/demo2.png)
 
 ---
 
