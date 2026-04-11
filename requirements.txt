@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pillow
+torch
+torchvision
+faiss-cpu
+openai
+clip @ git+https://github.com/openai/CLIP.git
